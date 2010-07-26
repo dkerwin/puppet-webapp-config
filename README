@@ -1,0 +1,32 @@
+webapp-config
+=============
+
+Simple module to manage webapps with Gentoo's webapp-config system. Requires that the webapp (cacti for example) is installed with "vhosts" USE flag.
+
+Example class:
+
+class cacti {
+
+    ## vhost settings
+    $cacti_version = "0.8.7e-r1"
+    $base_path     = "/"
+    $vhost         = "cacti"
+
+    package { "cacti":
+        ensure   => $cacti_version,
+        category => "net-analyzer",
+    }
+
+    webapp_config { "cacti-${cacti_version}":
+        action  => "install",
+        vhost   => $vhost,
+        base    => $base_path,
+        app     => "cacti",
+        version => $cacti_version,
+        depends => Package["cacti"],
+    }
+    
+    ...
+
+}
+
