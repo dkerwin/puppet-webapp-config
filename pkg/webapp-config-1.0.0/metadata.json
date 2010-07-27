@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "dependencies": [
+
+  ],
+  "name": "webapp-config",
+  "checksums": {
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "spec/unit/puppet/provider/README.markdown": "e52668944ee6af2fb5d5b9e798342645",
+    "README": "10a3fd47615ad6019fc32277d1409236",
+    "manifests/README.markdown": "b9970454391883e36b55137328792a55",
+    "tests/init.pp": "9ace31b89a28b53d079a12af147e3ff1",
+    "spec/README.markdown": "32a1fc0121c28aff554ef5d422b8b51e",
+    "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "Modulefile": "72ac7e85e7ca15f62526c3f07f2114b2",
+    "spec/unit/puppet/type/README.markdown": "de26a7643813abd6c2e7e28071b1ef94",
+    "manifests/init.pp": "c9b5341542470b5a65b539fb990c6700"
+  },
+  "types": [
+
+  ]
+}
